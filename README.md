@@ -11,6 +11,10 @@
       use Intervention\Image\ImageManager;
       use Intervention\Image\Drivers\Gd\Driver;
 
+     
+        // Create ImageManager instance
+        $manager = new ImageManager(new Driver());
+
       if ($this->thumbnail_image) {
             // $name = "product-" . time() . "." . $this->thumbnail_image->getClientOriginalExtension();
             $name = "product-" . time() . ".webp";
